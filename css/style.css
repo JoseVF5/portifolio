@@ -66,3 +66,42 @@ header nav ul li {
 }
 
 /* Estilo corpo */
+
+main {
+    padding: 40px 4%;
+    color:#ffffff
+}
+
+.perfil{
+    padding: 0px 80px 5%;
+    position: relative;
+}
+
+.perfil:hover{
+    transform: translateY(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }    
+}
+
+.foto-perfil{
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover; /* mantém a proporção e cobre todo o círculo */
+    border-radius: 50%; /* transforma em círculo */
+    border: 2px outset white; /* borda branca */
+    box-shadow: 0 0 4px white; /* sombra suave */;
+}
+
