@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #9992f7; 
+
+    text-align: left;
+}
+
+header{
+    background-color: rgb(17, 3, 95);
+    width: 10000px;
+    height: 60px;
+    text-align: center;
+    padding: 5px 10px 10px;
+}
+
+.titulo{
+    color:#ffffffe1;
+    background-color: rgb(6, 128, 228);
+    position: absolute; left: 10; top: 15px;
+
+    width: 80px;
+    height: 30px;
+    padding: 1px;
+    font: Georgia, serif;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.Home{
+    color:#ffffffe1;
+    background-color: rgb(6, 128, 228);
+    text-decoration: none;
+    position: absolute; right: 350px; top: 15px;
+
+    width: 60px;
+    height: 30px;
+    padding: 5px 5px 1px;
+    font: Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+} 
+
+.Sobre{
+    color:#ffffffe1;
+    background-color: rgb(6, 128, 228);
+    text-decoration: none;
+    position: absolute; right: 280px; top: 15px;
+
+    width: 50px;
+    height: 30px;
+    padding: 5px 5px 1px;
+    font: Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+} 
+
+.Portifolio{
+    color:#ffffffe1;
+    background-color: rgb(6, 128, 228);
+    text-decoration: none;
+    position: absolute; right: 180px; top: 15px;
+
+    width: 80px;
+    height: 30px;
+    padding: 5px 5px 1px;
+    font: Georgia, serif;
+    font: Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+} 
+
+.Contato{
+    color:#ffffffe1;
+    background-color: rgb(6, 128, 228);
+    text-decoration: none;
+    position: absolute; right: 90px; top: 15px;
+
+    width: 70px;
+    height: 30px;
+    padding: 5px 5px 1px;
+    font: Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+} 
+
+.titulo{
+    color:#ffffffe1;
+    font: Georgia, serif;
+    width: 360px;
+
+}
