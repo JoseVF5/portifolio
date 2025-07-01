@@ -31,7 +31,7 @@ header > .cabecalho{
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -47,7 +47,7 @@ header > .cabecalho{
         max-width: 1450px;
         white-space: nowrap;
         font-weight: bold;
-}
+    }
 }
 
 header nav ul {
