@@ -20,7 +20,7 @@ html body{
     width: 100%;
     max-width: 1450px;
     margin: 0 auto;
-    padding: 40px 4%;
+    padding: 20px 4%;
 }
 
 /* Estilo cabeçalho */
@@ -46,6 +46,7 @@ header nav ul {
     justify-content: center; 
     margin-top: 10px;
     font-size: 20px;
+    flex-wrap: wrap;
     transition: background-color 0.3s ease;
 }
 
@@ -57,11 +58,12 @@ header a {
 
 header nav ul {
     list-style-type: none;
+    padding: 1.6rem;
 }
 
 header nav ul li {
     display: inline-block;
-    padding: 0 50px;
+    padding: 0 40px;
 }
 
 header nav ul li:hover{
@@ -138,6 +140,7 @@ main {
 
 .texto-perfil h2 {
     font-size: 36px;
+    gap: 200px;
     margin-bottom: 15px;
 }
 
