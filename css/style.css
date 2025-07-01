@@ -29,6 +29,7 @@ header > .cabecalho{
     color:#ffffffe1;
     width: 100%;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -39,6 +40,14 @@ header > .cabecalho{
     font-size: 30px;
     white-space: nowrap;
     font-weight: bold;
+}
+
+@media screen and(max-width: 480px) {
+    .cabecalho h1 {
+        max-width: 1450px;
+        white-space: nowrap;
+        font-weight: bold;
+}
 }
 
 header nav ul {
@@ -64,6 +73,14 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     padding: 0 40px;
+}
+
+@media screen and (max-width: 480px){
+    header nav ul li {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
 }
 
 header nav ul li:hover{
@@ -109,7 +126,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
