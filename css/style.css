@@ -166,15 +166,6 @@ main {
     max-width: 680px;
 }
 
-/* Adaptar a tela para celular */
-@media screen and (max-width: 480px){
-    .texto-perfil {
-        overflow-x: hidden;
-        text-align: justify;
-        max-width: 100%;
-    }
-}
-
 .texto-perfil h2 {
     font-size: 36px;
     margin-bottom: 15px;
@@ -184,6 +175,20 @@ main {
 .texto-perfil p {
     font-size: 16px;
     line-height: 1.5rem;
+}
+
+/* Adaptar a tela para celular */
+@media screen and (max-width: 480px){
+    .texto-perfil {
+        overflow-x: hidden;
+        text-align: justify;
+    }
+    .texto-perfil h2 {
+        font-size: clamp(20px, 22px, 24px);
+    }
+    .texto-perfil p {
+        font-size: clamp(10px, 12px, 14px);
+    }
 }
 
 /* Segunda foto e texto de perfil */
@@ -207,13 +212,14 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-    .textoSecundario h1 {
+    .textoSecundario h2 {
         font-size: clamp(20px, 22px, 24px);
     }
     .textoSecundario li {
         font-size: clamp(10px, 12px, 14px);
     }
 }
+
 @media screen and (max-width: 480px){
     .textoSecundario{
         overflow-x: hidden;
