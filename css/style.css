@@ -17,7 +17,7 @@ html body{
     background-color: #000000; 
     min-height: 100%;
     width: 100%;
-    max-width: 1450px;
+    max-width: auto;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -190,6 +190,7 @@ main {
 
 .caixaSecundaria{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 24px 0px 0px 0px;
     justify-content: space-evenly;
@@ -205,6 +206,14 @@ main {
     line-height: 22px;
 }
 
+@media screen and (max-width: 480px) {
+    .textoSecundario h1 {
+        font-size: clamp(20px, 22px, 24px);
+    }
+    .textoSecundario li {
+        font-size: clamp(10px, 12px, 14px);
+    }
+}
 @media screen and (max-width: 480px){
     .textoSecundario{
         overflow-x: hidden;
@@ -217,7 +226,6 @@ main {
     width: 250px;
     height: 250px;
     padding: 5px;
-    flex-wrap: wrap;
     border-radius: 50%;
     border: 2px solid white;
     object-fit: cover;
