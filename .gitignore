@@ -1,2 +1,2 @@
-*.jpg
-*/img/Icons8
+ imagens/
+ *.{png,jpg,jpeg,gif}
