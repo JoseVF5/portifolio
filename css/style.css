@@ -184,6 +184,17 @@ main {
     line-height: 1.5rem;
 }
 
+.fotoDescontraida {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    flex-shrink: 0; /* Impede que a imagem diminua */
+}
+
+
 .linhabranca2{
     border: none;
     border-top: 1px solid white;
