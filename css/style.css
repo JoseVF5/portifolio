@@ -182,8 +182,35 @@ main {
 }
 
 .texto-perfil p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5rem;
+}
+
+/* Segunda foto e texto de perfil */
+
+.caixaSecundaria{
+    display: flex;
+    width: 100%;
+    padding: 24px 0px 0px 0px;
+    justify-content: space-evenly;
+}
+
+.textoSecundario h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.textoSecundario li{
+    line-height: 22px;
+}
+
+@media screen and (max-width: 480px){
+    .textoSecundario{
+        overflow-x: hidden;
+        text-align: justify;
+        max-width: 100%;
+    }
 }
 
 .fotoDescontraida {
@@ -199,7 +226,19 @@ main {
 
 .containerSecundario > .fotoDescontraida{
     transform: translateY(0px);
-    animation: float 3s ease-in-out infinite;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }    
 }
 
 .linhabranca2{
