@@ -52,6 +52,7 @@ header > .cabecalho{
 @media screen and (max-width: 480px) {
     .cabecalho h1 {
         max-width: 1450px;
+        font-size: clamp(20px, 22px, 24px);
         white-space: nowrap;
         font-weight: bold;
     }
