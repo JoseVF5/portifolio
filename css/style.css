@@ -579,7 +579,8 @@ main {
     box-shadow: -8px 6px  rgb(255, 255, 255);
 }
 
-.nome .input_nome:focus ~ label{
+.nome .input_nome:focus ~ label,
+.nome .input_nome:valid ~ label{
     transform: translateY(-40px);
     font-size: 20px;
     padding: 0px 14px 40px 0px;
@@ -602,6 +603,7 @@ main {
 
 .nome label{
     position: absolute;
+    height: auto;
     font-size: 18px;
     left: 18px;
     text-align: left;
@@ -609,6 +611,8 @@ main {
     margin-top: 8px;
     flex-wrap: wrap;
     font-weight: bold;
+    transition: all 0.2s;
+    cursor: text;
 }
 
 .input_nome{
@@ -624,64 +628,138 @@ main {
 
 .e-mail{
     display: block;
+    position: relative;
     font-weight: bold;
     color: #000000e1;
     background-color: #ffffff;
     margin: 0 auto;
+    border-radius: 4%;
     border-width: 2px;
-    padding: 10px 12px;
-    margin-top: 20px;
+    padding: 10px 10px;
+    margin-top: 30px;
 }
 
-.e-mail p{
+.e-mail label{
+    position: absolute;
     font-size: 18px;
+    left: 18px;
     text-align: left;
     justify-content: center;
+    margin-top: 8px;
     flex-wrap: wrap;
     font-weight: bold;
-    padding: 10px 20px 10px 0px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input_email{
+    width: 100%;
+    height: 30px;
+    margin-top: 4px;
+    border: 0px;
+    border-bottom: 2px solid #d1d1d1e1;
+    font-size: 18px;
+    padding: 5px;
+    outline: 0px;
+}
+
+.e-mail .input_email:focus ~ label,
+.e-mail .input_email:valid ~ label{
+    transform: translateY(-40px);
+    font-size: 20px;
+    padding: 0px 14px 40px 0px;
+    color: #ffffff;
 }
 
 .assunto{
     display: block;
+    position: relative;
     font-weight: bold;
     color: #000000e1;
     background-color: #ffffff;
     margin: 0 auto;
+    border-radius: 4%;
     border-width: 2px;
-    padding: 10px 12px;
-    margin-top: 20px;
+    padding: 10px 10px;
+    margin-top: 30px;
 }
 
-.assunto p{
+.assunto label{
+    position: absolute;
     font-size: 18px;
+    left: 18px;
     text-align: left;
     justify-content: center;
+    margin-top: 8px;
     flex-wrap: wrap;
     font-weight: bold;
-    padding: 10px 20px 10px 0px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input_assunto{
+    width: 100%;
+    height: 30px;
+    margin-top: 4px;
+    border: 0px;
+    border-bottom: 2px solid #d1d1d1e1;
+    font-size: 18px;
+    padding: 5px;
+    outline: 0px;
+}
+
+.assunto .input_assunto:focus ~ label,
+.assunto .input_assunto:valid ~ label{
+    transform: translateY(-40px);
+    font-size: 20px;
+    padding: 0px 14px 40px 0px;
+    color: #ffffff;
 }
 
 .descricao{
     display: block;
+    position: relative;
     font-weight: bold;
     color: #000000e1;
     background-color: #ffffff;
     margin: 0 auto;
+    border-radius: 4%;
     border-width: 2px;
-    padding: 10px 12px;    
-    margin-top: 20px;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 15%;
+    padding: 10px 10px;
+    margin-top: 30px;
 }
 
-.descricao p{
+.descricao label{
+    position: absolute;
     font-size: 18px;
+    left: 18px;
     text-align: left;
     justify-content: center;
+    margin-top: 8px;
     flex-wrap: wrap;
     font-weight: bold;
-    padding: 10px 20px 10px 0px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input_descricao{
+    width: 100%;
+    height: 30px;
+    margin-top: 4px;
+    border: 0px;
+    border-bottom: 2px solid #d1d1d1e1;
+    font-size: 18px;
+    padding: 5px;
+    outline: 0px;
+    cursor: text;
+}
+
+.descricao .input_descricao:focus ~ label,
+.descricao .input_descricao:valid ~ label{
+    transform: translateY(-40px);
+    font-size: 20px;
+    padding: 0px 14px 40px 0px;
+    color: #ffffff;
 }
 
 .botao{
