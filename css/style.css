@@ -342,9 +342,143 @@ main {
     padding: 5px 2%;
 }
 
-.containerGeral{
+.containerGeral1{
     max-height: 100%;
     flex-wrap: wrap;
+    display: flex;
     justify-content: space-around;
 }
 
+.containerGeral2{
+    max-height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 480px) {
+    .containerGeral1{
+    max-height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-shrink: 0;
+}
+}
+
+.stackPrincipal h2{
+    border-top: solid white;
+    width: 148px;
+    height: 40px;
+    border-radius: 10%;
+    border-color: #ffffff;
+    text-align: center;
+}
+
+.stackPrincipal{
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color: #ffffff;
+    box-shadow: -8px 14px  rgb(150, 150, 150);
+}
+.PySpark{
+    padding-left: 14px;
+    align-items: center;
+}
+
+.frameworkprincipal h2{
+    border-top: solid white;
+    width: 148px;
+    height: 40px;
+    border-radius: 10%;
+    border-color: #ffffff;
+    text-align: center;
+}
+
+.frameworkprincipal{
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color: #ffffff;
+    box-shadow: -8px 14px  rgb(150, 150, 150);
+    
+}
+
+.frameworkAuxiliar h2{
+    border-top: solid white;
+    width: 148px;
+    height: 40px;
+    border-radius: 10%;
+    border-color: #ffffff;
+    text-align: center;
+}
+
+.frameworkAuxiliar{
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color: #ffffff;
+    box-shadow: -8px 14px  rgb(150, 150, 150);
+    
+}
+
+.DB_Principal h2{
+    border-top: solid white;
+    width: 148px;
+    height: 40px;
+    border-radius: 10%;
+    border-color: #ffffff;
+    text-align: center;
+}
+
+.DB_Principal{
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color: #ffffff;
+    box-shadow: -8px 14px  rgb(150, 150, 150);
+    
+}
+
+.docker h2{
+    border-top: solid white;
+    width: 148px;
+    height: 40px;
+    border-radius: 10%;
+    border-color: #ffffff;
+    text-align: center;
+}
+
+.docker{
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color: #ffffff;
+    box-shadow: -8px 14px  rgb(150, 150, 150);
+    
+}
+
+.versionamento h2{
+    border-top: solid white;
+    width: 148px;
+    height: 40px;
+    border-radius: 10%;
+    border-color: #ffffff;
+    text-align: center;
+}
+
+.versionamento{
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color: #ffffff;
+    box-shadow: -8px 14px  rgb(150, 150, 150);
+    
+}
