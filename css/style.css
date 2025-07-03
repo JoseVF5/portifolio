@@ -134,7 +134,6 @@ main {
     text-align: justify;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
@@ -536,5 +535,38 @@ main {
 /* portifólio */
 
 .container_Geral{   
+    display: flex;
+    align-items: center;
     flex-grow: 1;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.contato_titulo{
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    max-width: 630px;
+    text-align: center;
+    
+}
+
+.contato_titulo h2{
+    display: inline-block;
+    font-size: 28px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    box-shadow: -3px 6px  rgb(150, 150, 150);
+}
+
+.contato_titulo p{
+    text-align: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+    padding: 18px 20px;
 }
