@@ -537,9 +537,9 @@ main {
 .container_Geral{   
     display: flex;
     align-items: center;
-    flex-grow: 1;
     justify-content: center;
-    padding: 40px 0;
+    flex-grow: 1;
+    padding: 0px 4%;
 }
 
 .contato_titulo{
@@ -636,7 +636,7 @@ main {
     border-radius: 4%;
     border-width: 2px;
     padding: 10px 10px;
-    margin-top: 30px;
+    margin-top: 36px;
 }
 
 .e-mail label{
@@ -681,7 +681,7 @@ main {
     border-radius: 4%;
     border-width: 2px;
     padding: 10px 10px;
-    margin-top: 30px;
+    margin-top: 36px;
 }
 
 .assunto label{
@@ -726,7 +726,7 @@ main {
     border-radius: 4%;
     border-width: 2px;
     padding: 10px 10px;
-    margin-top: 30px;
+    margin-top: 38px;
 }
 
 .descricao label{
@@ -763,22 +763,21 @@ main {
 }
 
 .botao{
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    max-width: 630px;
+    width: 100%;
     text-align: center;
 }
 
-.botao h3{
-    display: inline-block;
-    color: #000000e1;
-    background-color: #ffffff;
-    font-size: 28px;    
-    font-weight: bold;
-    padding: 10px 14px;
-    border-radius: 20%; 
+form input[type=submit]{
+    padding: 10px 30px;
     margin-top: 20px;
-    box-shadow: -2px 2px  rgb(99, 99, 99);
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: -6px 4px  rgb(150, 150, 150);
+    cursor: pointer;
 }
+
