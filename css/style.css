@@ -107,6 +107,7 @@ header nav ul li:hover{
 
 main {
     padding: 40px 4%;
+    display: flex;
     flex-grow: 1;
     color:#ffffff
 }
@@ -495,6 +496,7 @@ main {
 
 .Projetos{
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     padding: 40px 0;
 }
@@ -529,4 +531,10 @@ main {
     border-radius: 20%;
     transform: translateY(0px);
     animation: flutuar 4s ease-in-out infinite;
+}
+
+/* portifólio */
+
+.container_Geral{   
+    flex-grow: 1;
 }
