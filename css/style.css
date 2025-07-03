@@ -316,11 +316,14 @@ main {
     display:flex;
     width: 100vw; 
 }
-
+.logoJV{
+    display:flex;
+    flex-wrap: wrap;
+}
 .informaçao-rodape h1{
     color: rgb(255, 255, 255);
     font-size: 20px;
-    display:flex;   
+    display:flex;
     width: 100%;
     position: relative; 
     justify-content: center;
@@ -329,6 +332,7 @@ main {
 
 @media screen and (max-width: 480px) {
     .informaçao-rodape h1 {
+        display:flex;
         font-size: clamp(10px, 12px, 14px);
     }
 }
@@ -491,3 +495,35 @@ main {
 }
 
 /* aba portifólio */
+
+.Projetos{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.carregamento{
+    height: 200px;
+    max-height: auto;
+    width: 240px;
+    position: relative;
+    align-items: center;
+    background-color: #000000;
+    border: 3px solid white;
+    border-radius: 20%;
+    border-color: #ffffff;
+}
+
+.gif-carregamento {
+    height: auto;
+    object-fit: contain;
+}
+
+.carregamento_titulo{
+    width: auto;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding-top: 14px;
+}
