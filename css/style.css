@@ -323,7 +323,7 @@ main {
     display:flex;   
     width: 100%;
     position: relative; 
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
