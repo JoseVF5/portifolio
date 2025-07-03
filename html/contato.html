@@ -37,17 +37,20 @@
                     </div>
                     <div class="formulario">
                         <div class="nome">
-                            <input type="text" name="nome" id="nome" class="input_nome">
-                            <label for="nome-box">Nome completo:</label>
+                            <input type="text" name="nome" id="nome" class="input_nome" required>
+                            <label for="nome">Nome completo:</label>
                         </div>
                         <div class="e-mail">
-                            <p>E-mail: <input type="text" name="e-mail" id="e-mail"></p>
+                            <input type="text" name="email" id="email" class="input_email" required>
+                            <label for="email">Seu E-mail:</label>
                         </div>
                         <div class="assunto">
-                            <p>Assunto: <input type="text" name="assunto" id="assunto"></p>
+                            <input type="text" name="assunto" id="assunto" class="input_assunto" required>
+                            <label for="assunto">Assunto a tratar:</label>
                         </div>
                         <div class="descricao">
-                        <p>Descrição do assunto que deseja tratar: <input type="text" name="descricao" id="descricao"></p>  
+                            <input type="text" name="descricao" id="descricao" class="input_descricao" required>
+                            <label for="descricao">Descrição do assunto que deseja tratar:</label>  
                         </div>
                         <div class="botao">
                             <h3><input type="submit" value="Enviar"></h3>
