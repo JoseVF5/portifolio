@@ -316,10 +316,7 @@ main {
     display:flex;
     width: 100vw; 
 }
-.logoJV{
-    display:flex;
-    flex-wrap: wrap;
-}
+
 .informaçao-rodape h1{
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -512,6 +509,8 @@ main {
     border: 3px solid white;
     border-radius: 20%;
     border-color: #ffffff;
+    transform: translateY(0px);
+    animation: flutuar 4s ease-in-out infinite;
 }
 
 .gif-carregamento {
@@ -526,4 +525,8 @@ main {
     position: relative;
     align-items: center;
     padding-top: 14px;
+    border-bottom: 2px solid white;
+    border-radius: 20%;
+    transform: translateY(0px);
+    animation: flutuar 4s ease-in-out infinite;
 }
