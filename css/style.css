@@ -487,6 +487,7 @@ main {
     border-color: #ffffff;
     box-shadow: -8px 14px  rgb(150, 150, 150);
     transform: translateY(0px);
-    transform: translateX(0px);
     animation: float 4s ease-in-out infinite;
 }
+
+/* aba portifólio */
