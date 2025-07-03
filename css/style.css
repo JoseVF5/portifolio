@@ -357,15 +357,6 @@ main {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 480px) {
-    .containerGeral1{
-    max-height: 100%;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-shrink: 0;
-}
-}
-
 .stackPrincipal h2{
     border-top: solid white;
     width: 148px;
@@ -376,6 +367,7 @@ main {
 }
 
 .stackPrincipal{
+    background-color: #000000;
     border: 2px solid white;
     width: 150px;
     height: 150px;
@@ -398,6 +390,7 @@ main {
 }
 
 .frameworkprincipal{
+    background-color: #000000;
     border: 2px solid white;
     width: 150px;
     height: 150px;
@@ -417,6 +410,7 @@ main {
 }
 
 .frameworkAuxiliar{
+    background-color: #000000;
     border: 2px solid white;
     width: 150px;
     height: 150px;
@@ -436,6 +430,7 @@ main {
 }
 
 .DB_Principal{
+    background-color: #000000;
     border: 2px solid white;
     width: 150px;
     height: 150px;
@@ -455,6 +450,7 @@ main {
 }
 
 .docker{
+    background-color: #000000;
     border: 2px solid white;
     width: 150px;
     height: 150px;
@@ -474,11 +470,11 @@ main {
 }
 
 .versionamento{
+    background-color: #000000;
     border: 2px solid white;
     width: 150px;
     height: 150px;
     border-radius: 20%;
     border-color: #ffffff;
     box-shadow: -8px 14px  rgb(150, 150, 150);
-    
 }
