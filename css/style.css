@@ -314,7 +314,8 @@ main {
 
 .informaçao-rodape{
     display:flex;
-    width: 100vw; 
+    width: 100vw;
+    flex-direction: column;
 }
 
 .informaçao-rodape h1{
@@ -328,9 +329,12 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+    .informaçao-rodape {
+        align-items: center;
+    }
     .informaçao-rodape h1 {
         display:flex;
-        font-size: clamp(10px, 12px, 14px);
+        font-size: clamp(8px, 10px, 12px);
     }
 }
 
@@ -787,4 +791,3 @@ form input[type=submit]{
     box-shadow: -6px 4px  rgb(150, 150, 150);
     cursor: pointer;
 }
-
