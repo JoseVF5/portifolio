@@ -95,7 +95,19 @@ header nav ul li:hover{
     transform: scale(1.01);
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.836)
 }
+/* Estilo do menu Mobile */
 
+.menu_mobile{
+    background-color: red;
+    height: vh;
+}
+
+
+
+
+
+
+/* linha de separaçaõ do cabeçalho */
 .linhabranca{
     border: none;
     border-top: 1px solid white;
