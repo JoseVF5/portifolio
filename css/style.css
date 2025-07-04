@@ -549,6 +549,58 @@ main {
     flex-direction: column;
 }
 
+@media screen and (max-width: 400px) {
+    .contato_titulo h2 {
+        font-size: 24px; 
+        padding: 8px 15px;
+    }
+
+    .contato_titulo p {
+        font-size: 16px; 
+        padding: 10px 15px;
+    }
+
+    .formulario {
+        padding: 5px; 
+    }
+
+    .nome label,
+    .e-mail label,
+    .assunto label,
+    .descricao label {
+        font-size: 10px; 
+        left: 10px; 
+        margin-top: 6px;
+    }
+
+    .nome .input_nome:focus ~ label,
+    .nome .input_nome:valid ~ label,
+    .e-mail .input_email:focus ~ label,
+    .e-mail .input_email:valid ~ label,
+    .assunto .input_assunto:focus ~ label,
+    .assunto .input_assunto:valid ~ label,
+    .descricao .input_descricao:focus ~ label,
+    .descricao .input_descricao:valid ~ label {
+        transform: translateY(-40px); 
+        font-size: 12px;
+        padding: 0px 5px 0px 0px;
+    }
+
+    .input_nome,
+    .input_email,
+    .input_assunto,
+    .input_descricao {
+        height: 25px; 
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    form input[type=submit] {
+        font-size: 18px; 
+        padding: 8px 20px;
+    }
+}
+
 .contato_titulo{
     flex-wrap: wrap;
     justify-content: center;
@@ -579,8 +631,8 @@ main {
 }
 
 .formulario{
-    width: 460px;
-    max-width: 100%;;
+    width: 90%;
+    max-width: 460px;
     background-color:#020202;
     padding: 10px 10px;
     border-radius: 10%;
