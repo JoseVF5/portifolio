@@ -64,7 +64,7 @@ header nav ul {
     margin-top: 10px;
     font-size: 20px;
     flex-wrap: wrap;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 header a {
@@ -75,7 +75,7 @@ header a {
 
 header nav ul {
     list-style-type: none;
-    padding: 1.6rem;
+    padding: 0.8rem;
 }
 
 header nav ul li {
@@ -98,85 +98,50 @@ header nav ul li:hover{
 
 /* Estilos para o Menu Hambúrguer */
 .menu-toggle {
-    display: none;
+    display: none; 
     flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
     cursor: pointer;
-    z-index: 1001;
+    gap: 5px;
 }
 
+ /* Estilo das barras do menu hambúrguer */
 .menu-toggle .bar {
-    width: 100%;
+    width: 25px;
+    color: #ffffff;
     height: 3px;
-    background-color: #ffffff;
-    border-radius: 5px;
+    background-color: var(--cor-texto);
     transition: all 0.3s ease;
 }
 
-/* Esconder o menu de navegação por padrão em telas menores */
-.nav-list {
-    list-style: none;
-    display: flex; /* Mantenha 'flex' aqui para telas grandes */
-    margin: 0;
-    padding: 0;
+/* #Estilo e ocultamento inicial */
+@media (max-width: 480px) {
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        padding: 1rem 0;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+    /* ... outras regras para .nav-item, etc. ... */
+    .menu-toggle {
+        display: flex; 
+    }
 }
 
-/* @media query para telas menores (ex: celulares e tablets) */
-@media screen and (max-width: 768px) {
-    .navegacao {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .menu-toggle {
-        display: flex; /* Exibe o ícone do hambúrguer em telas menores */
-    }
-
-    .nav-list {
-        position: fixed;
-        top: 0;
-        right: -100%; /* Esconde o menu fora da tela */
-        width: 70%;
-        height: 100vh;
-        background-color: #000000;
-        flex-direction: column; /* Coloca os itens em coluna para o menu lateral */
-        justify-content: center;
-        align-items: center;
-        transition: all 0.5s ease-in-out;
-        z-index: 1000;
-        padding-top: 60px;
-    }
-
-    .nav-list.active {
-        right: 0; /* Move o menu para a tela quando a classe 'active' é adicionada */
-    }
-
-    .nav-list li {
-        margin: 20px 0;
-    }
-
-    .nav-list a {
-        color: #ffffff;
-        font-size: 1.5em;
-        text-decoration: none;
-    }
-
-    /* Animação do ícone do hambúrguer para um "X" */
-    .menu-toggle.active .bar:nth-child(2) {
-        opacity: 0; /* Esta é a regra crucial para ocultar a barra do meio */
-    }
-
-    .menu-toggle.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu-toggle.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+.linhabranca{
+    border: none;
+    border-top: 1px solid white;
+    margin: 5px 0px 0px 0px; 
+    width: 100vw;
 }
 
 /* Estilo corpo */
