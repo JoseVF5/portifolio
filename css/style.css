@@ -576,10 +576,9 @@ main {
     width: 460px;
     max-width: 100%;;
     background-color:#020202;
-    border: 2px solid rgb(255, 255, 255);
     padding: 10px 10px;
     border-radius: 10%;
-    box-shadow: -8px 6px  rgb(255, 255, 255);
+    box-shadow: -8px 6px #d1d1d1e1;
     margin-left: auto; 
     margin-right: auto;
 }
@@ -757,6 +756,9 @@ main {
     padding: 5px;
     outline: 0px;
     cursor: text;
+    resize: none; 
+    overflow: hidden; 
+    box-sizing: border-box; 
 }
 
 .descricao .input_descricao:focus ~ label,
