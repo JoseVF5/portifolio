@@ -356,7 +356,6 @@ main {
 .informaçao-rodape{
     display:flex;
     width: 100vw;
-    flex-direction: column;
 }
 
 .informaçao-rodape h1{
@@ -372,6 +371,7 @@ main {
 @media screen and (max-width: 480px) {
     .informaçao-rodape {
         align-items: center;
+        flex-direction: column;
     }
     .informaçao-rodape h1 {
         display:flex;
