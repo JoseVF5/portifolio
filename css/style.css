@@ -540,6 +540,7 @@ main {
     justify-content: center;
     flex-grow: 1;
     padding: 0px 4%;
+    flex-direction: column;
 }
 
 .contato_titulo{
@@ -572,11 +573,15 @@ main {
 }
 
 .formulario{
+    width: 460px;
+    max-width: 100%;;
     background-color:#020202;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px 10px;
     border-radius: 10%;
     box-shadow: -8px 6px  rgb(255, 255, 255);
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .nome .input_nome:focus ~ label,
