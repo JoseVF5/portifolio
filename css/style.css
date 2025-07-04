@@ -335,6 +335,8 @@ main {
     .informaçao-rodape h1 {
         display:flex;
         font-size: clamp(8px, 10px, 12px);
+        margin-top: 12px;
+        margin-bottom: 12px;
     }
 }
 
