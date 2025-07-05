@@ -7,7 +7,6 @@ const navMenu = document.querySelector('.nav-menu');
 if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
-        // Animar o ícone de hamburguer para um 'x' (opcional, requer mais CSS)
     });
 
 // Fechar o Menu ao Clicar em um Link

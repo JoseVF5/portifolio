@@ -153,6 +153,19 @@ header nav ul li:hover{
     .menu-toggle {
         display: flex; 
     }
+    
+     /* Animação do ícone do hambúrguer para um "X" */
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0; /* Oculta a barra do meio */
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
 
 .linhabranca{
