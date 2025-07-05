@@ -87,7 +87,6 @@ header nav ul li {
     header nav ul li {
     display: inline-block;
     flex-wrap: wrap;
-    padding: 0px 60px;
 }
 }
 
@@ -107,9 +106,8 @@ header nav ul li:hover{
  /* Estilo das barras do menu hambúrguer */
 .menu-toggle .bar {
     width: 25px;
-    color: #ffffff;
     height: 3px;
-    background-color: var(--cor-texto);
+    background-color: #ffffff ;
     transition: all 0.3s ease;
 }
 
@@ -118,18 +116,38 @@ header nav ul li:hover{
     .nav-menu {
         display: none; 
         flex-direction: column;
-        width: 100%;
+        width: 60%;
+        height: 30%;
+        color: #ffffff;
         background-color: rgba(0, 0, 0, 0.95);
         position: absolute;
-        top: 60px; 
+        top: 70px; 
         right: 0;
-        padding: 1rem 0;
+        padding: 0;
         align-items: center;
+        justify-content: center;
+        line-height: 2.8rem;
         z-index: 1000;
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 20%;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-top: 2px solid white;
+    }
+
+    .nav-list{
+        margin: 0px;
+        padding: 0px;
     }
 
     .nav-menu.active {
         display: flex;
+        width: 60%;
+        max-width: auto;
+        margin: 0px auto;
+        padding: 5px 2%;
+        align-items: center;
+        transition: all 0.3s ease;
     }
     /* ... outras regras para .nav-item, etc. ... */
     .menu-toggle {
