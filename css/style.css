@@ -915,3 +915,17 @@ textarea:focus{
     border-color:rgba(3, 55, 114, 0.95) ;
     box-shadow: 0 0 0 0.098rem rgba(150, 150, 150, 0.95);
 }
+
+/* estilos para mensagens de erro do formulário */
+.error-message {
+    color: #ff4d4d; 
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
+    font-weight: bold;
+}
+
+/* adiciona borda vermelha aos campos com erro */
+input.error, textarea.error {
+    border: 1px solid #ff4d4d !important; 
+}

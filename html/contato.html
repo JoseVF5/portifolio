@@ -36,7 +36,7 @@
     <hr class="linhabranca">
     <main>
         <section class="tela-principal" id="Portifólio">
-            <form action="https://formspree.io/f/mrbkvkjo" method="POST">
+            <form action="https://formspree.io/f/mrbkvkjo" method="POST" id="contactForm">
                 <div class="Container_Geral">
                     <div class="contato_titulo">
                         <h2>Entre em contato</h2>
@@ -46,10 +46,12 @@
                         <div class="nome">
                             <input type="text" name="nome" id="nome" class="input_nome" required>
                             <label for="nome">Nome completo:</label>
+                            <span class="error-message" id="nameError"></span>
                         </div>
                         <div class="e-mail">
                             <input type="text" name="email" id="email" class="input_email" required>
                             <label for="email">Seu E-mail:</label>
+                            <span class="error-message" id="emailError"></span>
                         </div>
                         <div class="assunto">
                             <input type="text" name="assunto" id="assunto" class="input_assunto" required>
@@ -58,6 +60,7 @@
                         <div class="descricao">
                             <textarea name="descricao" id="descricao" class="input_descricao" required rows="4"></textarea>
                             <label for="descricao">Descrição do assunto:</label>  
+                            <span class="error-message" id="messageError"></span>
                         </div>
                         <div class="botao">
                             <input type="submit" value="Enviar">
