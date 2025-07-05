@@ -592,6 +592,7 @@ main {
     position: relative;
     align-items: center;
     padding-top: 14px;
+    border-top: hidden;
     border-bottom: 2px solid white;
     border-radius: 20%;
     transform: translateY(0px);
