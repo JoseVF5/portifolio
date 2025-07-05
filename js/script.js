@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- CÓDIGO PARA VALIDAÇÃO DO FORMULÁRIO DE CONTATO ---
+    //  CÓDIGO PARA VALIDAÇÃO DO FORMULÁRIO DE CONTATO 
     const contactForm = document.getElementById('contactForm');
 
     // Verifica se o formulário de contato existe na página atual antes de adicionar os listeners
@@ -37,34 +37,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Função para exibir mensagem de erro
         function displayError(element, message, inputElement) {
-            if (element) { // Verifica se o elemento da mensagem de erro existe
+            if (element) { 
                 element.textContent = message;
                 element.style.display = 'block';
             }
-            if (inputElement) { // Adiciona classe 'error' ao campo de input/textarea
+            if (inputElement) { 
                 inputElement.classList.add('error');
             }
         }
 
         // Função para limpar mensagem de erro
         function clearError(element, inputElement) {
-            if (element) { // Verifica se o elemento da mensagem de erro existe
+            if (element) { 
                 element.textContent = '';
                 element.style.display = 'none';
             }
-            if (inputElement) { // Remove classe 'error' do campo de input/textarea
+            if (inputElement) { 
                 inputElement.classList.remove('error');
             }
         }
 
         // Adiciona listener para o evento de submit do formulário
         contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Impede o envio padrão do formulário
+            event.preventDefault(); 
 
-            let isValid = true; // Flag para controlar a validação geral do formulário
+            let isValid = true; 
 
-            // --- Validação do Nome ---
-            if (nameInput && nameError) { // Garante que os elementos existem
+            //  Validação do Nome 
+            if (nameInput && nameError) { 
                 if (nameInput.value.trim() === '0', '1', '2', '3', '4', '5', '6', '7', '8', '9') {
                     displayError(nameError, 'Por favor, digite seu nome.', nameInput);
                     isValid = false;
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
 
-            // --- Validação do Email ---
+            // Validação do Email 
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regex simples para validação de email
             if (emailInput && emailError) { // Garante que os elementos existem
                 if (emailInput.value.trim() === '') {
@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
 
-            // --- Validação da Mensagem ---
-            if (messageInput && messageError) { // Garante que os elementos existem
+            // Validação da Mensagem 
+            if (messageInput && messageError) {
                 if (messageInput.value.trim() === '') {
                     displayError(messageError, 'Por favor, digite sua mensagem.', messageInput);
                     isValid = false;
@@ -99,11 +99,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Se todas as validações passaram, o formulário é considerado válido
             if (isValid) {
-                // Aqui você pode adicionar a lógica para realmente enviar o formulário,
-                // como uma requisição AJAX para um servidor, ou o envio padrão:
-                alert('Formulário enviado com sucesso!'); // Exemplo de mensagem de sucesso
-                contactForm.submit(); // Envia o formulário se válido (comportamento padrão HTML)
-                // contactForm.reset(); // Opcional: Limpa os campos do formulário após o envio
+                alert('Formulário enviado com sucesso!'); 
+                contactForm.submit();
+                contactForm.reset(); 
             }
         });
 
