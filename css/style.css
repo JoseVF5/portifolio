@@ -904,3 +904,12 @@ form input[type=submit]{
     box-shadow: -6px 4px  rgb(150, 150, 150);
     cursor: pointer;
 }
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus{
+    outline: none;
+    border-color:rgba(3, 55, 114, 0.95) ;
+    box-shadow: 0 0 0 0.098rem rgba(150, 150, 150, 0.95);
+}
