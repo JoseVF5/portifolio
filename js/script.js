@@ -85,7 +85,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
             //  Validação do Nome 
             if (nameInput && nameError) { 
-                if (nameInput.value.trim() === '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', "") {
+                if (nameInput.value.trim() === '') {
                     displayError(nameError, 'Por favor, digite seu nome.', nameInput);
                     isValid = false;
                 } else {
